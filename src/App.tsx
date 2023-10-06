@@ -1,8 +1,16 @@
 import "./App.css";
-import Athenticatioin from "./views/Athentication";
+import MainPage from "./pages/MainPage";
+import Router from "./router";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
-  return <Athenticatioin />;
+  return (
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;
